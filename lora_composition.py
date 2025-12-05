@@ -83,6 +83,7 @@ def get_args_parser():
     # Generation hyperparameters.
     parser.add_argument("--top_p", type=float, default=0.9, help="top_p")
     parser.add_argument("--temperature", type=float, default=0.1, help="temperature")
+    
     # This is really only relevant for citation, as the training task differs from the test task.
     parser.add_argument("--train_gen_len", type=int, default=100, help="Max generation length.")
     parser.add_argument("--max_gen_len", type=int, default=100, help="Max generation length.")
